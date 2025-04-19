@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>夫妻共管</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  /*响应式 Web 设计 – Viewport*/
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    /* 响应式 Web 设计 – Viewport */
+
+/*<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="outerContainer">
@@ -20,7 +22,7 @@
             <div class="header">
                 <h1>夫妻共管</h1>
                 <h3 class="byline">一个互动故事示例</h3>   /* byline: 标题下署名*/
-            </div>
+/*      </div>
         </div>
     </div>
     <script src="ink.js"></script>
@@ -28,56 +30,51 @@
     <script src="main.js"></script>
 </body>
 </html>
----------------------------------------------------------*/
+---------------------------------------------------------
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
-
 
 /*----------------------------------------------------
 //标签选择器，即以 HTML 标签作为 CSS 修饰所用的选择器 h1; h2
 ---------------------------------------------------------*/
-body {  				//网页的背景
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;					//font-weight:normal; font-weight:bold;//加粗; //font-weight:lighter;
-    background: white;
-    overflow: hidden;						//隐藏元素 - display:none 或 visibility:hidden	
+body {
+  /*//网页的背景*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal; /*font-weight:normal; font-weight:bold;//加粗; //font-weight:lighter;*/
+  background: white;
+  overflow: hidden; /*隐藏元素 - display:none 或 visibility:hidden	*/
 }
 
 body.switched {
-    transition: color 0.6s, background-color 0.6s;
+  transition: color 0.6s, background-color 0.6s;
 }
 
 h1,
 h2 {
-    text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;     //指定多个字体
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  font-family: 'Quattrocento', Georgia, 'Times New Roman', Times, serif; /*/指定多个字体*/
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 30pt;
-    margin-bottom: 10px;
+  font-size: 30pt;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 14pt;
-    font-style: italic;					//font-style: italic;  //font-style:normal; //font-style:oblique;//倾斜（oblique）
-    font-family: sans-serif;
-    font-weight: lighter;
-    color: #BBB;
+  font-size: 14pt;
+  font-style: italic; /*font-style: italic; normal; //font-style:oblique;//倾斜（oblique）*/
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #bbb;
 }
 
-
-h3 {						//自己家的h3
-font-weight:lighter;
-font-weight: lighter;
-text-align: center;
-}
-
-.header {						//<div class="header"> //标题占据的位置
-    padding-top: 3em;
-    padding-bottom: 3em;				//单边内边距属性:padding-top:;padding-bottom定义元素边框与元素内容之间的空间。
+.header {
+  /*/<div class="header"> //标题占据的位置*/
+  padding-top: 3em;
+  padding-bottom: 3em; /*/单边内边距属性:padding-top:;padding-bottom定义元素边框与元素内容之间的空间。*/
 }
 
 /* class 选择器
@@ -85,88 +82,81 @@ text-align: center;
     # author: Name
 点开头的是类选择器*/
 
-
- 
-.byline {					//* byline: 标题下署名*/
-    font-style: normal;			//italic;
+.byline {
+  /* byline: 标题下署名*/
+  font-style: normal; /*/italic;*/
 }
 
-.written-in-ink {				//<h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
-    z-index: 3;
-    font-size: 9pt;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 700;
-    position: fixed;				//position: fixed; 即使窗口是滚动的它也不会移动：
+.written-in-ink {
+  /*/<h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>*/
+  z-index: 3;
+  font-size: 9pt;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 700;
+  position: fixed; /*/position: fixed; 即使窗口是滚动的它也不会移动：*/
 
-
-    display: block;
-    width: 100%;
-    background: white;
-    transition: color 0.6s, background 0.6s;
-    margin: 0;
-    padding-top: 10px;				//padding-top: 6px;	
-    padding-bottom: 6px;
-    height: 14px;
-    top: 0;
+  display: block;
+  width: 100%;
+  background: white;
+  transition: color 0.6s, background 0.6s;
+  margin: 0;
+  padding-top: 10px; /*/padding-top: 6px;*/
+  padding-bottom: 6px;
+  height: 14px;
+  top: 0;
 }
 
 /* 
   Enables <iframe> support work on itch.io when using mobile iOS
 */
 .outerContainer {
-    position: absolute;
-    display: block;
-    margin: 0;
-    padding: 0;
-    -webkit-overflow-scrolling: touch;
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin-top: 24px;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 980px) {
-    .outerContainer {
-        margin-top: 44px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  .outerContainer {
+    margin-top: 44px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .container {
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
-    background: white;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 4em;
+  background: white;
 }
 
 .switched .container {
-    transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
-
-
 
 /*----------------------------------------
 p网页正式文本
 -----------------------------------------*/
 p {
-    font-size: 13pt;
-    color: #888;				//color: Black;     //color: Blue;    //color: #888; 单行注释  
-    line-height: 1.7em;				// 用em来设置字体大小 1em的默认大小是16px。			
-    font-weight: lighter;
+  font-size: 13pt;
+  color: #838181; /*color: Black;     //color: Blue;    //color: #888; 单行注释 */
+  line-height: 1.7em; /* 用em来设置字体大小 1em的默认大小是16px。*/
+  font-weight: lighter;
 }
-
-
-
-
 
 /*--------------------------------------
 链接样式
@@ -178,124 +168,112 @@ a:hover - 当用户鼠标放在链接上时
 a:active - 链接被点击的那一刻
 ----------------------------------------*/
 a {
-    font-weight: 700;
-    color: #b97c2c;
-    font-family: sans-serif;
-    transition: color 0.6s;
-    text-decoration: none;
+  font-weight: 700;
+  color: #b97c2c;
+  font-family: sans-serif;
+  transition: color 0.6s;
+  text-decoration: none;
 }
 
 a:hover {
-    color: black;
-    transition: color 0.1s;
+  color: rgb(0, 0, 0);
+  transition: color 0.1s;
 }
 
 strong {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-
-
-
-
 .container .hide {
-    opacity: 0.0;
+  opacity: 0;
 }
 
 .container .invisible {
-    display: none;
+  display: none;
 }
 
-.container>* {
-    opacity: 1.0;
-    transition: opacity 1.0s;
+.container > * {
+  opacity: 1;
+  transition: opacity 1s;
 }
-
-
 
 /*
   Class applied to all choices
   (Will always appear inside <p> element by default.)
 */
 .choice {
-    text-align: center;
-    line-height: 1.7em;
+  text-align: center;
+  line-height: 1.7em;
 }
 
 /* 
   Class applied to first choice
 */
-:not(.choice)+.choice {
-    padding-top: 1em;				// padding填充 1em的默认大小是16px。
+:not(.choice) + .choice {
+  padding-top: 1em; /* padding填充 1em的默认大小是16px。*/
 }
 
 /*  Class applied to choice links */
 .choice a {
-    font-size: 12pt;					// 原来的 15pt;
-    font-weight: lighter;				//原无	
+  font-size: 13pt; /* 原来的 15pt;*/
+  /*font-weight: lighter;	*/ /*原无	*/
 }
-
-
-
-
 
 /* 
   Built-in class:
     The End # CLASS: end
 */
 .end {
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*----------------------------------------------------------------
 HTML 元素以 id 属性来设置 id 选择器,CSS 中 id 选择器以 # 来定义。
 -----------------------------------------------------------------*/
-#controls {					///id 选择器  #    -------<div id="controls" class="buttons">
-    z-index: 4;
-    font-size: 9pt;
-    text-align: center;
-    padding-bottom: 6px;
-    position: fixed;
-    right: 14px;
-    top: 10px;					// 原来是 top: 4px;<div id="controls" class="buttons">的位置
-    user-select: none;
-    background: white;
-    transition: color 0.6s, background 0.6s;
+#controls {
+  /*id 选择器  #    -------<div id="controls" class="buttons">*/
+  z-index: 4;
+  font-size: 9pt;
+  text-align: center;
+  padding-bottom: 6px;
+  position: fixed;
+  right: 14px;
+  top: 10px; /* 原来是 top: 4px;<div id="controls" class="buttons">的位置*/
+  user-select: none;
+  background: white;
+  transition: color 0.6s, background 0.6s;
 }
 
-
-#controls [disabled] {     				//id 选择器: #controls
-    color: #ccc;
+#controls [disabled] {
+  /*id 选择器: #controls*/
+  color: #ccc;
 }
 
-#controls>*:not(:last-child):after {
-    content: " | ";
+#controls > *:not(:last-child):after {
+  content: ' | ';
 }
 
-@media screen and (max-width: 980px) {			// 浏览器屏幕上显示 @media 规则允许在相同样式表为不同媒体设置不同的样式。
-    #controls {
-        z-index: 2;
-        padding-top: 24px;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
+@media screen and (max-width: 980px) {
+  /* 浏览器屏幕上显示 @media 规则允许在相同样式表为不同媒体设置不同的样式。*/
+  #controls {
+    z-index: 2;
+    padding-top: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
-
-
-
-
 
 /* ---------------------------------------------
   Dark Theme (Added in Inky 0.10.0)
@@ -303,43 +281,92 @@ HTML 元素以 id 属性来设置 id 选择器,CSS 中 id 选择器以 # 来定�
 -----------------------------------------------*/
 
 body.dark {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .dark h2 {
-    color: #666;
+  color: #666;
 }
 
 .dark .container {
-    background: black;
+  background: black;
 }
 
 .dark .written-in-ink {
-    background: black;
+  background: black;
 }
 
 .dark a {
-    color: #cc8f1a;
-    transition: color 0.6s;
+  color: #cc8f1a;
+  transition: color 0.6s;
 }
 
 .dark a:hover {
-    color: white;
+  color: white;
 }
 
 .dark strong {
-    color: white;
+  color: white;
 }
 
 .dark #controls [disabled] {
-    color: #444;
+  color: #444;
 }
 
 .dark .end {
-    color: white;
+  color: white;
 }
 
 .dark #controls {
-    background: black;
+  background: black;
+}
+
+/* --------------------------------------- 
+/* 更改原样式后加
+/*---------------------------------------*/
+
+h3 {
+  /*自己加的h3*/
+  font-weight: lighter;
+  text-align: center;
+}
+/* 浅色主题样式 */
+/*body.light p {
+  font-size: 13pt;
+  color: #1d1d1d;
+  line-height: 1.7em;
+  font-weight: normal;
+}*/
+
+p {
+  font-size: 12pt; /*13pt;*/
+  color: rgb(39, 38, 38); /* Black;  Blue;  */
+  line-height: 1.7em; /* 用em来设置字体大小 1em的默认大小是16px。*/
+  font-weight: normal; /*lighter;	*/
+}
+/*
+ 深色主题样式 */
+body.dark p {
+  font-size: 12pt;
+  color: rgb(202, 197, 197);
+  line-height: 1.7em;
+  font-weight: normal;
+}
+
+/*
+  Class applied to choice links */
+.choice a {
+  font-size: 13pt; /* 原来的 15pt;*/
+  font-weight: normal; /*lighter;*/ /*原无	*/
+}
+
+/*  
+    hover 鼠标落在选择 */
+a:hover {
+  color: rgb(60, 32, 219);
+  transition: color 0.1s;
+}
+.dark a:hover {
+  color: rgb(117, 237, 84);
 }
